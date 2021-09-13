@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BodyComponent } from './body/body.component';
+import { SearchPageComponent } from './body/search-page.component';
+import { YourLibraryComponent } from './body/your-library.component';
 import { HistoryComponent } from './header/history.componen';
 import { LibraryButtonsComponent } from './header/library-buttons.component';
 import { TopBarComponent } from './header/topbar.component';
@@ -23,7 +25,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     SidebarButtonsComponent,
     SidebarPlaylistButtonsComponent,
     BodyComponent,
-    LayoutMainComponent
+    LayoutMainComponent,
+    SearchPageComponent,
+    YourLibraryComponent
   ],
   imports: [
     BrowserModule
