@@ -13,6 +13,7 @@ import { LayoutMainComponent } from './layout/layout-main.component';
 import { SidebarButtonsComponent } from './sidebar/sidebar-buttons.component';
 import { SidebarPlaylistButtonsComponent } from './sidebar/sidebar-playlist-buttons.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     YourLibraryComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
