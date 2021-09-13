@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { BodyComponent } from './body/body.component';
 import { HistoryComponent } from './header/history.componen';
 import { LibraryButtonsComponent } from './header/library-buttons.component';
 import { TopBarComponent } from './header/topbar.component';
 import { UserDropdownComponent } from './header/user-dropdown.component';
+import { LayoutMainComponent } from './layout/layout-main.component';
 import { SidebarButtonsComponent } from './sidebar/sidebar-buttons.component';
 import { SidebarPlaylistButtonsComponent } from './sidebar/sidebar-playlist-buttons.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -19,7 +21,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     UserDropdownComponent,
     SidebarComponent,
     SidebarButtonsComponent,
-    SidebarPlaylistButtonsComponent
+    SidebarPlaylistButtonsComponent,
+    BodyComponent,
+    LayoutMainComponent
   ],
   imports: [
     BrowserModule
