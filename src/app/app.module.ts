@@ -6,6 +6,9 @@ import { HistoryComponent } from './header/history.componen';
 import { LibraryButtonsComponent } from './header/library-buttons.component';
 import { TopBarComponent } from './header/topbar.component';
 import { UserDropdownComponent } from './header/user-dropdown.component';
+import { SidebarButtonsComponent } from './sidebar/sidebar-buttons.component';
+import { SidebarPlaylistButtonsComponent } from './sidebar/sidebar-playlist-buttons.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { UserDropdownComponent } from './header/user-dropdown.component';
     TopBarComponent,
     HistoryComponent,
     LibraryButtonsComponent,
-    UserDropdownComponent
+    UserDropdownComponent,
+    SidebarComponent,
+    SidebarButtonsComponent,
+    SidebarPlaylistButtonsComponent
   ],
   imports: [
     BrowserModule
