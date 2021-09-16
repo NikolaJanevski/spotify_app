@@ -1,9 +1,11 @@
 <div style="background-color: lightcoral;">
     <div class="container-fluid">
         <div class="d-flex flex-row">
-            <spotify-playlist-card>Loading card</spotify-playlist-card>
-            <spotify-playlist-card>Loading card</spotify-playlist-card>
-            <spotify-playlist-card>Loading card</spotify-playlist-card>
+            <div *ngFor="let playlist of playlists;">
+                <spotify-playlist-card title={{playlist.title}} author={{playlist.author}} imagePath={{playlist.imagePath}}>
+                    Loading card
+                </spotify-playlist-card>
+            </div>
         </div>
     </div>
 </div>
