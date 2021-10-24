@@ -15,4 +15,15 @@ export class UserInfoService {
         console.log(this.baseUrl + this.myInfoEndpoint);
         return this.http.get<UserInfo>(this.baseUrl + this.myInfoEndpoint);
     }
+
+    modifyUserInfo() {
+        var temp: UserInfo = {
+            FirstName: "John",
+            LastName: "Smith",
+            GitHub: "http",
+            mix_id: "jsmith"
+        }
+
+        return this.http.put(this.baseUrl + this.myInfoEndpoint, temp);
+    }
 }
