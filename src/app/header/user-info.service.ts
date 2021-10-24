@@ -16,14 +16,7 @@ export class UserInfoService {
         return this.http.get<UserInfo>(this.baseUrl + this.myInfoEndpoint);
     }
 
-    modifyUserInfo() {
-        var temp: UserInfo = {
-            FirstName: "John",
-            LastName: "Smith",
-            GitHub: "http",
-            mix_id: "jsmith"
-        }
-
-        return this.http.put(this.baseUrl + this.myInfoEndpoint, temp);
+    modifyUserInfo(data:UserInfo) {
+        return this.http.put(this.baseUrl + this.myInfoEndpoint, data);
     }
 }
