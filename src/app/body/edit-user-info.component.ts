@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { UserInfo } from "../header/user-info.model";
 import { UserInfoService } from "../header/user-info.service";
+import { DatabaseService } from "./database.service";
 
 @Component({
     selector: 'spotify-edit-user-info',
@@ -8,8 +9,8 @@ import { UserInfoService } from "../header/user-info.service";
 })
 export class EditUserInfoComponent {
 
-    constructor(private infoService: UserInfoService) {
-
+    constructor(private infoService: UserInfoService, private dbService:DatabaseService) {
+        dbService.showData();
     }
 
     onUpdateUserInfo(data:UserInfo) {
