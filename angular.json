@@ -106,6 +106,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "spotify-app:build:production",
+            "firebaseProject": "spotify-app-4716b",
+            "firebaseHostingSite": "spotify-app-4716b"
+          }
         }
       }
     }

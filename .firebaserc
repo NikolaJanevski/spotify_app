@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "spotify-app-4716b": {
+      "hosting": {
+        "spotify-app": [
+          "spotify-app-4716b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "spotify-app-4716b"
+  }
+}
