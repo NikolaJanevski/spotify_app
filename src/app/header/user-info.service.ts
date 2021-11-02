@@ -5,7 +5,7 @@ import { UserInfo } from "./user-info.model";
 @Injectable({providedIn: 'root'})
 export class UserInfoService {
     private baseUrl:string = 'https://spotify-app-4716b-default-rtdb.firebaseio.com/';
-    private myInfoEndpoint:string = 'my-info.json';
+    private myInfoEndpoint:string = 'my-info/2.json';
     
     constructor(private http: HttpClient) {
 
